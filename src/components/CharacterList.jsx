@@ -7,7 +7,7 @@ const CharacterList = ({ onCharacterClick }) => {
   const publicKey = "4d52fb3fa1ef52af3d6b38218aff5477";
   const privateKey = "9394870fafc8931dc52368af8fdbc806e86f8320y";
   const ts = 1;
-  const hash = "f049a6da8eae7de350f90da11f7b73fe";
+  const hash = "4d12be3f643adb2bbc6b01830702d350";
   const apiUrl = `http://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}`;
 
   useEffect(() => {

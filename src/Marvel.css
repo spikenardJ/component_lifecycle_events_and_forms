@@ -1,25 +1,69 @@
+h1 {
+  text-align: center;
+}
+  
 .character-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
+  margin-top: 20px;
+}
   
-  .character-card {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-  }
+.character-list h2 {
+  margin-bottom: 10px;
+}
   
-  .character-thumbnail {
-    width: 100%;
-    height: auto;
-  }
+.character-list input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
   
-  .character-detail {
-    margin-top: 20px;
-  }
+.character-list button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
   
-  .character-detail h2 {
-    margin-bottom: 10px;
-  }
+.character-list button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.character-list button:hover {
+  background-color: #0056b3;
+}
+
+.character-list button:active {
+  background-color: #004286;
+}
+
+.character-list button:focus {
+  outline: none;
+}
+
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.character-card {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.character-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.character-detail {
+  margin-top: 20px;
+}
+
+.character-detail h2 {
+  margin-bottom: 10px;
+}
