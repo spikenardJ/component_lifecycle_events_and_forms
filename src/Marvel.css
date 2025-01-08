@@ -1,0 +1,25 @@
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .character-card {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .character-thumbnail {
+    width: 100%;
+    height: auto;
+  }
+  
+  .character-detail {
+    margin-top: 20px;
+  }
+  
+  .character-detail h2 {
+    margin-bottom: 10px;
+  }
