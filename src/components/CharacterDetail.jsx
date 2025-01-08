@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
+import axios from "axios";
 
 const CharacterDetail = ({ characterId }) => {
   const [character, setCharacter] = useState(null);
@@ -12,7 +12,7 @@ const CharacterDetail = ({ characterId }) => {
   useEffect(() => {
     const fetchCharacterDetail = async () => {
       try {
-        const response = await Axios.get(`${apiUrl}`);
+        const response = await axios.get(`${apiUrl}`);
         setCharacter(response.data.data.results[0]);
       } catch (error) {
         console.error("Error fetching character details:", error);

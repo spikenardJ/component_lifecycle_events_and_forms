@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Axios from "axios";
+import axios from "axios";
 
 const CharacterList = ({ onCharacterClick }) => {
   const [characters, setCharacters] = useState([]);
@@ -12,7 +12,7 @@ const CharacterList = ({ onCharacterClick }) => {
   useEffect(() => {
     const fetchCharacters = async () => {
       try {
-        const response = await Axios.get(`${apiUrl}`);
+        const response = await axios.get(`${apiUrl}`);
         setCharacters(response.data.data.results);
       } catch (error) {
         console.error("Error fetching characters:", error);
