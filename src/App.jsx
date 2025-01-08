@@ -13,8 +13,8 @@ const App = () => {
   return (
     <div className="app">
       <h1>Marvel Comics Characters</h1>
-      <CharacterList onCharacterClick={handleCharacterClick} />
       {selectedCharacterId && <CharacterDetail characterId={selectedCharacterId} />}
+      <CharacterList onCharacterClick={handleCharacterClick} />
     </div>
   );
 };

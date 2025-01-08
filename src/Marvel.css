@@ -1,9 +1,37 @@
 h1 {
   text-align: center;
+  color: navy;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul{
+  background-color: azure;
+  border: 1px solid navy;
+  width: 40%;
+  text-align: left;
+  padding: 30px;
+  list-style-type: none;
+  margin: 0 30px;
+}
+
+ul, li {
+  color: navy;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+  border-radius: 15px;
+}
+
+h2, h3, p, li {
+  color: navy;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
 .character-list {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
   
 .character-list h2 {
@@ -24,11 +52,6 @@ h1 {
   border: none;
   cursor: pointer;
 }
-  
-.character-list button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
 
 .character-list button:hover {
   background-color: #0056b3;
@@ -36,10 +59,6 @@ h1 {
 
 .character-list button:active {
   background-color: #004286;
-}
-
-.character-list button:focus {
-  outline: none;
 }
 
 .character-list {
@@ -51,7 +70,13 @@ h1 {
 .character-card {
   cursor: pointer;
   border: 1px solid #ccc;
-  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid navy;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 6px;
+  width: 130px;
   text-align: center;
 }
 
